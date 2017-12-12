@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Aluno</string>
+
+    <string name="contact_save_name_error">O nome não pode ser vazio.</string>
+    <string name="contact_save_phone_error">Número de telefone inválido.</string>
+    <string name="contact_save_email_error">Email inválido.</string>
+    <string name="error">Erro</string>
+</resources>
