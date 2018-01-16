@@ -164,16 +164,7 @@ public class MainActivity extends AppCompatActivity {
         if(getAlarmePrefs()) {
             holder.alarmSwitch.setChecked(true);
         }
-        holder.alarmSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
-                if(isChecked) {
-                    startAlarm();
-                } else {
-                    cancelAlarm();
-                }
-            }
-        });
+
     }
 
     @Override
@@ -223,7 +214,6 @@ public class MainActivity extends AppCompatActivity {
         private Holder(Activity activity) {
             alunosListView = (ListView) activity.findViewById(R.id.list_view);
             addAlunoFloatingActionButton = (FloatingActionButton) activity.findViewById(fab);
-            alarmSwitch = (SwitchCompat) activity.findViewById(R.id.alarm);
         }
     }
 
